@@ -1,0 +1,2 @@
+calcHeight("homeDesc");
+calcHeight("homeImg");

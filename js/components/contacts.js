@@ -1,0 +1,2 @@
+calcHeight("contact");
+calcHeight("contactsImg");
