@@ -183,7 +183,7 @@ main {
   transition: 0.4s; }
 
 .section_picture {
-  background: url(../img/portraits/granny/granny-480.jpg) no-repeat center center;
+  background: url(img/portraits/granny/granny-480.jpg) no-repeat center center;
   background-size: cover;
   cursor: pointer; }
 
