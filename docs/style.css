@@ -177,13 +177,16 @@ main {
   color: #000;
   line-height: 1.7em; }
 
+.poem_stroke {
+  margin: 0; }
+
 .section_desc:hover, .section_desc:active {
   color: #fff;
   background-color: #000;
   transition: 0.4s; }
 
 .section_picture {
-  background: url(img/portraits/granny/granny-480.jpg) no-repeat center center;
+  background: url(img/gallery-00/item-00/backgr.png) no-repeat center center;
   background-size: cover;
   cursor: pointer; }
 
@@ -222,7 +225,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: default; }
+  cursor: default;
+  text-decoration: none; }
 
 .preview:hover .overlay {
   opacity: 1; }
@@ -317,8 +321,7 @@ main {
 .picture_title {
   font-family: 'Headland One', sans-serif;
   font-size: 48px;
-  text-transform: uppercase;
-  margin: 2em 1em; }
+  text-transform: uppercase; }
 
 .picture_text {
   font-family: 'Miriam Libre', serif;
@@ -458,7 +461,8 @@ main {
   text-indent: 45%; }
 
 .poem_indent {
-  text-indent: 25%; }
+  text-indent: 20%;
+  margin: 0; }
 
 .poem_br {
   margin-bottom: 2em; }
@@ -627,30 +631,33 @@ main {
 
 .footer {
   width: 100%;
-  border-top: solid 2px #000; }
+  height: 100%;
+  border-top: solid 2px #000;
+  background-color: black; }
 
 .footer__list {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 2rem; }
+  padding: 2rem;
+  margin: 0; }
 
 .footer__link {
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: 'Miriam Libre', serif;
   font-size: 14px;
   font-weight: 700; }
 
 .footer__link:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   transition: 0.4s; }
 
 .footer__link:active {
   background-color: black;
-  color: white;
+  color: grey;
   transition: 0.4s;
   text-decoration: underline; }
 
@@ -760,7 +767,8 @@ main {
 
 @media screen and (max-width: 400px) {
   .section, .picture, .picture_content, .plug, .poem, .poem_content, .portrait, .video {
-    height: 100%; } }
+    height: 100%;
+    margin: 6rem 0; } }
 
 @media screen and (max-height: 500px) {
   .section, .picture, .picture_content, .plug, .poem_content, .portrait, .video {
