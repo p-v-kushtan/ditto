@@ -186,7 +186,7 @@ main {
   transition: 0.4s; }
 
 .section_picture {
-  background: url(img/gallery-00/item-00/backgr.png) no-repeat center center;
+  background: url(../img/gallery-00/item-00/backgr.png) no-repeat center center;
   background-size: cover;
   cursor: pointer; }
 
