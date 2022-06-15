@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Headland+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Headland+One&family=Miriam+Libre:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap");
 /* common styles */
 * {
   box-sizing: border-box; }
@@ -46,7 +47,8 @@ body {
   color: #fff; }
 
 .header_nav {
-  justify-content: end;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
   cursor: pointer; }
 
@@ -180,13 +182,17 @@ main {
 .poem_stroke {
   margin: 0; }
 
+.poem-rus {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500; }
+
 .section_desc:hover, .section_desc:active {
   color: #fff;
   background-color: #000;
   transition: 0.4s; }
 
 .section_picture {
-  background: url(../img/gallery-00/item-00/backgr.png) no-repeat center center;
+  background: url(img/gallery-00/item-00/backgr.png) no-repeat center center;
   background-size: cover;
   cursor: pointer; }
 
@@ -321,7 +327,9 @@ main {
 .picture_title {
   font-family: 'Headland One', sans-serif;
   font-size: 48px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-right: 40px; }
 
 .picture_text {
   font-family: 'Miriam Libre', serif;
@@ -767,8 +775,11 @@ main {
 
 @media screen and (max-width: 400px) {
   .section, .picture, .picture_content, .plug, .poem, .poem_content, .portrait, .video {
-    height: 100%;
-    margin: 6rem 0; } }
+    height: 100%; }
+  .poem {
+    margin: 6rem; }
+  .poem_box, .poem {
+    padding: 0 2rem; } }
 
 @media screen and (max-height: 500px) {
   .section, .picture, .picture_content, .plug, .poem_content, .portrait, .video {
